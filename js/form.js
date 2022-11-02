@@ -63,6 +63,8 @@
             p4: p4.value,
             p5: p5.value,
             p6: p6.value,
+            gol: gol.value,
+            gd: gd.value,
             cod: cod
             }
         };
