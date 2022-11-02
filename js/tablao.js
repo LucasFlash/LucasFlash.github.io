@@ -2,6 +2,9 @@
 
 let Array1 = [
     {id:1, name:"Lucas Flash", p1:"Argentina", p2:"Mexico", p3:"Polonia", p4:"Argentina", p5:"Argentina", p6:"Mexico", gol:6, gd:"Dinamarca"},
+    {id:2, name:"MARTIN", p1:"Argentina", p2:"Mexico", p3:"Polonia", p4:"Argentina", p5:"Polonia", p6:"Empate", gol:7, gd:"Francia"},
+    {id:3, name:"MicaREyTurienzo", p1:"Argentina", p2:"Mexico", p3:"Polonia", p4:"Argentina", p5:"Argentina", p6:"Mexico", gol:4, gd:"Francia"},
+    {id:4, name:"Luciano Mussetta", p1:"Argentina", p2:"Mexico", p3:"Empate", p4:"Argentina", p5:"Argentina", p6:"Mexico", gol:5, gd:"Francia"},
 
 ];
 
