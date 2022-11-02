@@ -1,7 +1,7 @@
 
 
 let Array1 = [
-    {id:1, name:"Lucas Flash", p1:"Argen3tina", p2:"Mexico", p3:"Polonia", p4:"Argentina", p5:"Argentina", p6:"Mexico", gol:6, gd:"Dinamarca"},
+    {id:1, name:"Lucas Flash", p1:"Argentina", p2:"Mexico", p3:"Polonia", p4:"Argentina", p5:"Argentina", p6:"Mexico", gol:6, gd:"Dinamarca"},
 
 ];
 
