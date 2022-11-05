@@ -24,7 +24,7 @@ if (cod < 411220000) { a=0 }
   else { if (cod < 511110000) { a=5 } 
   else { if (cod < 111130000) { a=8 } }}}}}}}}}}}}}}}}
 
-
+console.log(a)
 let nombre = ["F. Armani", "L. Messi", "L. Paredes", "N. Tagliafico", "G. Montiel", "R. De Paul", "A. Di Maria", "G. Lo Celso", "E. Martinez", "N. Otamendi"];
 let years = ["36", "35", "28", "30", "25", "28", "34", "26", "30", "34"];
 let pais = ["Argentina", "Francia", "Italia", "Francia", "España", "España", "Italia", "ESpaña", "Inglaterra", "Portugal"];
