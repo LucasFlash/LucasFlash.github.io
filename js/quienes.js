@@ -9,17 +9,20 @@ console.log(a)
 if (cod < 411220000) { a=0 }
  else { if (cod < 411222500) { a=1 }  
   else { if (cod < 411224500) { a=2 } 
-  else { if (cod < 411230000) { a=3 } 
-  else { if (cod < 411233000) { a=4 } 
-  else { if (cod < 411234500) { a=5 } 
-  else { if (cod < 511060000) { a=6 } 
-  else { if (cod < 411070000) { a=7 } 
-  else { if (cod < 411073000) { a=0 } 
-  else { if (cod < 411080000) { a=1 } 
-  else { if (cod < 411083000) { a=2 } 
-  else { if (cod < 411090000) { a=9 } 
-  else { if (cod < 411093000) { a=5 } 
-  else { if (cod < 411103000) { a=8 } }}}}}}}}}}}}}
+  else { if (cod < 411230000) { a=5 } 
+  else { if (cod < 411231000) { a=7 } 
+  else { if (cod < 411234500) { a=4 } 
+  else { if (cod < 511060000) { a=2 } 
+  else { if (cod < 511070000) { a=7 } 
+  else { if (cod < 511073000) { a=0 } 
+  else { if (cod < 511080000) { a=4 } 
+  else { if (cod < 511083000) { a=2 } 
+  else { if (cod < 511090000) { a=3 } 
+  else { if (cod < 511093000) { a=1 } 
+  else { if (cod < 511100000) { a=6 } 
+  else { if (cod < 511103000) { a=9 } 
+  else { if (cod < 511110000) { a=5 } 
+  else { if (cod < 111130000) { a=8 } }}}}}}}}}}}}}}}}
 
 
 let nombre = ["F. Armani", "L. Messi", "L. Paredes", "N. Tagliafico", "G. Montiel", "R. De Paul", "A. Di Maria", "G. Lo Celso", "E. Martinez", "N. Otamendi"];
