@@ -1,7 +1,6 @@
 
-
 let a;
-let d1; let d2;
+let d1; let d2; let d3;
 let c = new Date();console.log(c);
 let cod = c.getHours()*10000 + c.getMinutes()*100 + c.getSeconds(); 
 console.log(cod)
@@ -29,9 +28,11 @@ if (cod < 50000) { a=1 }
 
 console.log(a)
 let nombre = ["F. Armani", "L. Messi", "L. Paredes", "N. Tagliafico", "G. Montiel", "R. De Paul", "A. Di Maria", "G. Lo Celso", "E. Martinez", "N. Otamendi"];
-let years = ["36", "35", "28", "30", "25", "28", "34", "26", "30", "34"];
-let pais = ["Argentina", "Francia", "Italia", "Francia", "España", "España", "Italia", "ESpaña", "Inglaterra", "Portugal"];
-let num = ["1", "10", "5", "3", "4", "7", "11", "20", "23", "19"]; //Tu array de provincias
+let confx = ["36", "35", "28", "30", "25", "28", "34", "26", "30", "34"];
+let ganox = ["Argentina", "Francia", "Italia", "Francia", "España", "España", "Italia", "ESpaña", "Inglaterra", "Portugal"];
+let grupx = ["1", "10", "5", "3", "4", "7", "11", "20", "23", "19"]; //Tu array de provincias
+let capx = ["1h", "1h0", "5h", "h3", "h4", "h", "11h", "2h0", "2h3", "1h9"];
+
 let img = ["https://www.pesmaster.com/pes-2020/graphics/players/player_111194730_l.png",
 "https://futhead.cursecdn.com/static/img/fm/18/wcplayers/158023_AS.png",
 "https://www.pesmaster.com/pes-2021/graphics/players/player_138457388_l.png",
@@ -47,15 +48,16 @@ let y= nombre[a];
 
     let btnp0 = document.querySelector('#btnp0')
     btnp0.addEventListener('click', () => {
-    let anio = document.getElementById('anio')
-    anio.innerHTML=years[a];
+    let conf = document.getElementById('conf')
+    conf.innerHTML=confx[a];
     d1=1;
     })
+
     let btnp1 = document.querySelector('#btnp1')
     btnp1.addEventListener('click', () => {
         if (d1>0){
-    let paises = document.getElementById('pais')
-    paises.innerHTML=pais[a];
+    let gano = document.getElementById('gano')
+    gano.innerHTML=ganox[a];
     d2=1;
     }
     else {  Swal.fire(
@@ -64,11 +66,26 @@ let y= nombre[a];
         'SUERTE'
       )}
     })
+
     let btnp2 = document.querySelector('#btnp2')
     btnp2.addEventListener('click', () => {
         if (d2>0){
-    let nums = document.getElementById('num')
-    nums.innerHTML=num[a];
+    let grup = document.getElementById('grup')
+    grup.innerHTML=grupx[a];
+    d3=1;
+    }
+    else { Swal.fire(
+        'NO HAGAS TRAMPA',
+        'PRIMERO PEDIME LAS OTRAS PISTAS',
+        'SUERTE'
+      )}
+    })
+
+    let btnp3 = document.querySelector('#btnp3')
+    btnp3.addEventListener('click', () => {
+        if (d3>0){
+    let cap = document.getElementById('cap')
+    cap.innerHTML=capx[a];
     }
     else { Swal.fire(
         'NO HAGAS TRAMPA',

@@ -1,7 +1,6 @@
 
 
 
-
 let Array1 = [
     {id:1, name:"Lucas Flash", p1:"Argentina", p2:"Mexico", p3:"Polonia", p4:"Argentina", p5:"Argentina", p6:"Mexico", gol:6, gd:"Dinamarca"},
     {id:2, name:"MARTIN", p1:"Argentina", p2:"Mexico", p3:"Polonia", p4:"Argentina", p5:"Polonia", p6:"Empate", gol:7, gd:"Francia"},
@@ -12,21 +11,21 @@ let Array1 = [
 ];
 
 let Array1x = [
-    {id:1, name:"Lucas Flash", p1:"?", p2:"?", p3:"?", p4:"?", p5:"?", p6:"?", gol:"?", gd:"?"},
-    {id:2, name:"MARTIN", p1:"?", p2:"?", p3:"?", p4:"?", p5:"?", p6:"?", gol:"?", gd:"?"},
-    {id:3, name:"MicaREyTurienzo", p1:"?", p2:"?", p3:"?", p4:"?", p5:"?", p6:"?", gol:"?", gd:"?"},
-    {id:4, name:"Luciano Mussetta", p1:"?", p2:"?", p3:"?", p4:"?", p5:"?", p6:"?", gol:"?", gd:"?"},
-    {id:5, name:"Valerio", p1:"?", p2:"?", p3:"?", p4:"?", p5:"?", p6:"?", gol:"?", gd:"?"},
+    {id:1, name:"Lucas Flash", p1:"?", p2:"?", p3:"?", p4:"?", p5:"?", p6:"?", gol:"?", gd:"?", pts:"0"},
+    {id:2, name:"MARTIN", p1:"?", p2:"?", p3:"?", p4:"?", p5:"?", p6:"?", gol:"?", gd:"?", pts:"0"},
+    {id:3, name:"MicaREyTurienzo", p1:"?", p2:"?", p3:"?", p4:"?", p5:"?", p6:"?", gol:"?", gd:"?", pts:"0"},
+    {id:4, name:"Luciano Mussetta", p1:"?", p2:"?", p3:"?", p4:"?", p5:"?", p6:"?", gol:"?", gd:"?", pts:"0"},
+    {id:5, name:"Valerio", p1:"?", p2:"?", p3:"?", p4:"?", p5:"?", p6:"?", gol:"?", gd:"?", pts:"0"},
 
 ]
 
 
-lag = {id:0, name:"Prueba", p1:"Argentina", p2:"Polonia", p3:"Mexico", p4:"Argentina", p5:"Argentina", p6:"Empate", gol:0, gd:"Francia"}
+lag = {id:0, name:"Prueba", p1:"Argentina", p2:"Mexico", p3:"Mexico", p4:"Argentina", p5:"Argentina", p6:"Empate", gol:0, gd:"Francia"}
 
 
 const bb=1311183700
-const bc=1311184000
-const bd=1311184600
+const bc=1311183800
+const bd=1311184000
 
 
 console.log(Array1x)
@@ -72,7 +71,7 @@ let table = new Tabulator("#tablap", {
         {title:"Goles", field:"gol", sorter:"number"},
         {title:imagen7, field:"gd",  sorter:"string"},
 
-        {title:"Puntos", field:"gol", sorter:"number"},
+        {title:"Puntos", field:"pts", sorter:"number"},
 
 
     ],
@@ -90,8 +89,10 @@ for (let index = 0; index < Array1.length; index++) {
     d1 = c1["p1"]; 
     g1 = lag["p1"];
     h1h=Array1x[index];
+    pts0=h1h["pts"];
     if (d1 == g1) { 
         h1h["p1"]=1; 
+        h1h["pts"]=parseInt(pts0)+1;
     }
 }
 
@@ -100,8 +101,10 @@ for (let index = 0; index < Array1.length; index++) {
     d1 = c1["p2"]; 
     g1 = lag["p2"];
     h1h=Array1x[index];
+    pts0=h1h["pts"];
     if (d1 == g1) { 
         h1h["p2"]=1; 
+        h1h["pts"]=parseInt(pts0)+1;
     }
 }
 
@@ -123,7 +126,7 @@ let table = new Tabulator("#tablap", {
         {title:"Goles", field:"gol", sorter:"number"},
         {title:imagen7, field:"gd",  sorter:"string"},
 
-        {title:"Puntos", field:"gol", sorter:"number"},
+        {title:"Puntos", field:"pts", sorter:"number"},
 
 
     ],
@@ -140,8 +143,10 @@ if (cod > bc & cod < bd) {
         d1 = c1["p1"]; 
         g1 = lag["p1"];
         h1h=Array1x[index];
+        pts0=h1h["pts"];
         if (d1 == g1) { 
             h1h["p1"]=1; 
+            h1h["pts"]=parseInt(pts0)+1;
         }
     }
     
@@ -150,8 +155,10 @@ if (cod > bc & cod < bd) {
         d1 = c1["p2"]; 
         g1 = lag["p2"];
         h1h=Array1x[index];
+        pts0=h1h["pts"];
         if (d1 == g1) { 
-            h1h["p2"]=1; 
+            h1h["p2"]=1;
+            h1h["pts"]=parseInt(pts0)+1; 
         }
     }
 
@@ -160,8 +167,10 @@ if (cod > bc & cod < bd) {
         d1 = c1["p3"]; 
         g1 = lag["p3"];
         h1h=Array1x[index];
+        pts0=h1h["pts"];
         if (d1 == g1) { 
             h1h["p3"]=1; 
+            h1h["pts"]=parseInt(pts0)+1;
         }
     }
     
@@ -170,8 +179,10 @@ if (cod > bc & cod < bd) {
         d1 = c1["p4"]; 
         g1 = lag["p4"];
         h1h=Array1x[index];
+        pts0=h1h["pts"];
         if (d1 == g1) { 
             h1h["p4"]=1; 
+            h1h["pts"]=parseInt(pts0)+1;
         }
     }
     
@@ -193,7 +204,7 @@ if (cod > bc & cod < bd) {
             {title:"Goles", field:"gol", sorter:"number"},
             {title:imagen7, field:"gd",  sorter:"string"},
     
-            {title:"Puntos", field:"gol", sorter:"number"},
+            {title:"Puntos", field:"pts", sorter:"number"},
     
     
         ],
@@ -210,8 +221,10 @@ if (cod > bc & cod < bd) {
             d1 = c1["p1"]; 
             g1 = lag["p1"];
             h1h=Array1x[index];
+            pts0=h1h["pts"];
             if (d1 == g1) { 
                 h1h["p1"]=1; 
+                h1h["pts"]=parseInt(pts0)+1;
             }
         }
         
@@ -220,8 +233,10 @@ if (cod > bc & cod < bd) {
             d1 = c1["p2"]; 
             g1 = lag["p2"];
             h1h=Array1x[index];
+            pts0=h1h["pts"];
             if (d1 == g1) { 
                 h1h["p2"]=1; 
+                h1h["pts"]=parseInt(pts0)+1;
             }
         }
     
@@ -230,8 +245,10 @@ if (cod > bc & cod < bd) {
             d1 = c1["p3"]; 
             g1 = lag["p3"];
             h1h=Array1x[index];
+            pts0=h1h["pts"];
             if (d1 == g1) { 
                 h1h["p3"]=1; 
+                h1h["pts"]=parseInt(pts0)+1;
             }
         }
         
@@ -240,8 +257,10 @@ if (cod > bc & cod < bd) {
             d1 = c1["p4"]; 
             g1 = lag["p4"];
             h1h=Array1x[index];
+            pts0=h1h["pts"];
             if (d1 == g1) { 
                 h1h["p4"]=1; 
+                h1h["pts"]=parseInt(pts0)+1;
             }
         }
 
@@ -250,8 +269,10 @@ if (cod > bc & cod < bd) {
             d1 = c1["p5"]; 
             g1 = lag["p5"];
             h1h=Array1x[index];
+            pts0=h1h["pts"];
             if (d1 == g1) { 
                 h1h["p5"]=1; 
+                h1h["pts"]=parseInt(pts0)+1;
             }
         }
         
@@ -260,8 +281,10 @@ if (cod > bc & cod < bd) {
             d1 = c1["p6"]; 
             g1 = lag["p6"];
             h1h=Array1x[index];
+            pts0=h1h["pts"];
             if (d1 == g1) { 
                 h1h["p6"]=1; 
+                h1h["pts"]=parseInt(pts0)+1;
             }
         }
 
@@ -270,8 +293,10 @@ if (cod > bc & cod < bd) {
             d1 = c1["gd"]; 
             g1 = lag["gd"];
             h1h=Array1x[index];
+            pts0=h1h["pts"];
             if (d1 == g1) { 
                 h1h["gd"]=1; 
+                h1h["pts"]=parseInt(pts0)+1;
             }
         }
 
@@ -294,7 +319,7 @@ if (cod > bc & cod < bd) {
                 {title:"Goles", field:"gol", sorter:"number"},
                 {title:imagen7, field:"gd",   formatter:"tickCross", sorter:"boolean"},
         
-                {title:"Puntos", field:"gol", sorter:"number"},
+                {title:"Puntos", field:"pts", sorter:"number"},
         
         
             ],
