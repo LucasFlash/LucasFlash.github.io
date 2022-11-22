@@ -23,9 +23,9 @@ let Array1x = [
 lag = {id:0, name:"Prueba", p1:"Arabia Saudi", p2:"Empate", p3:"Mexico", p4:"Argentina", p5:"Argentina", p6:"Empate", gol:0, gd:"Francia"}
 
 
-const bb=1311183700
-const bc=1311183800
-const bd=1311184000
+const bb=2211183700
+const bc=2611183000
+const bd=3011193000
 
 
 console.log(Array1x)
