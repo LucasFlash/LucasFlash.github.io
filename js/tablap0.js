@@ -20,7 +20,7 @@ let Array1x = [
 ]
 
 
-lag = {id:0, name:"Prueba", p1:"Argentina", p2:"Mexico", p3:"Mexico", p4:"Argentina", p5:"Argentina", p6:"Empate", gol:0, gd:"Francia"}
+lag = {id:0, name:"Prueba", p1:"Arabia Saudi", p2:"Empate", p3:"Mexico", p4:"Argentina", p5:"Argentina", p6:"Empate", gol:0, gd:"Francia"}
 
 
 const bb=1311183700
