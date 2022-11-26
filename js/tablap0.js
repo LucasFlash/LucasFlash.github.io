@@ -7,6 +7,8 @@ let Array1 = [
     {id:3, name:"MicaREyTurienzo", p1:"Argentina", p2:"Mexico", p3:"Polonia", p4:"Argentina", p5:"Argentina", p6:"Mexico", gol:4, gd:"Francia"},
     {id:4, name:"Luciano Mussetta", p1:"Argentina", p2:"Mexico", p3:"Empate", p4:"Argentina", p5:"Argentina", p6:"Mexico", gol:5, gd:"Francia"},
     {id:5, name:"Valerio", p1:"Argentina", p2:"Mexico", p3:"Arabia Saudi", p4:"Argentina", p5:"Argentina", p6:"Mexico", gol:6, gd:"Tunez"},
+    {id:6, name:"Brian Nunz", p1:"Argentina", p2:"Polonia", p3:"Empate", p4:"Argentina", p5:"Argentina", p6:"Arabia Saudi", gol:5, gd:"Australia"},
+    {id:7, name:"Reymon", p1:"Argentina", p2:"Mexico", p3:"Polonia", p4:"Argentina", p5:"Argentina", p6:"Arabia Saudi", gol:2, gd:"Francia"},
 
 ];
 
@@ -16,15 +18,17 @@ let Array1x = [
     {id:3, name:"MicaREyTurienzo", p1:"?", p2:"?", p3:"?", p4:"?", p5:"?", p6:"?", gol:"?", gd:"?", pts:"0"},
     {id:4, name:"Luciano Mussetta", p1:"?", p2:"?", p3:"?", p4:"?", p5:"?", p6:"?", gol:"?", gd:"?", pts:"0"},
     {id:5, name:"Valerio", p1:"?", p2:"?", p3:"?", p4:"?", p5:"?", p6:"?", gol:"?", gd:"?", pts:"0"},
+    {id:6, name:"Brian Nunz", p1:"?", p2:"?", p3:"?", p4:"?", p5:"?", p6:"?", gol:"?", gd:"?", pts:"0"},
+    {id:7, name:"Reymon", p1:"?", p2:"?", p3:"?", p4:"?", p5:"?", p6:"?", gol:"?", gd:"?", pts:"0"},
 
 ]
 
 
-lag = {id:0, name:"Prueba", p1:"Arabia Saudi", p2:"Empate", p3:"Mexico", p4:"Argentina", p5:"Argentina", p6:"Empate", gol:0, gd:"Francia"}
+lag = {id:0, name:"Prueba", p1:"Arabia Saudi", p2:"Empate", p3:"Polonia", p4:"Argentina", p5:"Argentina", p6:"Empate", gol:0, gd:"Francia"}
 
 
 const bb=2211183700
-const bc=2611183000
+const bc=2611180000
 const bd=3011193000
 
 
