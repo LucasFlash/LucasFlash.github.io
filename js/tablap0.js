@@ -2,7 +2,7 @@
 
 
 let Array1 = [
-    {id:1, name:"Lucas Flash", p1:"Argentina", p2:"Mexico", p3:"Polonia", p4:"Argentina", p5:"Argentina", p6:"Mexico", gol:6, gd:"Dinamarca"},
+   
     {id:2, name:"MARTIN", p1:"Argentina", p2:"Mexico", p3:"Polonia", p4:"Argentina", p5:"Polonia", p6:"Empate", gol:7, gd:"Francia"},
     {id:3, name:"MicaREyTurienzo", p1:"Argentina", p2:"Mexico", p3:"Polonia", p4:"Argentina", p5:"Argentina", p6:"Mexico", gol:4, gd:"Francia"},
     {id:4, name:"Luciano Mussetta", p1:"Argentina", p2:"Mexico", p3:"Empate", p4:"Argentina", p5:"Argentina", p6:"Mexico", gol:5, gd:"Francia"},
@@ -13,7 +13,7 @@ let Array1 = [
 ];
 
 let Array1x = [
-    {id:1, name:"Lucas Flash", p1:"?", p2:"?", p3:"?", p4:"?", p5:"?", p6:"?", gol:"?", gd:"?", pts:"0"},
+    
     {id:2, name:"MARTIN", p1:"?", p2:"?", p3:"?", p4:"?", p5:"?", p6:"?", gol:"?", gd:"?", pts:"0"},
     {id:3, name:"MicaREyTurienzo", p1:"?", p2:"?", p3:"?", p4:"?", p5:"?", p6:"?", gol:"?", gd:"?", pts:"0"},
     {id:4, name:"Luciano Mussetta", p1:"?", p2:"?", p3:"?", p4:"?", p5:"?", p6:"?", gol:"?", gd:"?", pts:"0"},
@@ -24,7 +24,7 @@ let Array1x = [
 ]
 
 
-lag = {id:0, name:"Prueba", p1:"Arabia Saudi", p2:"Empate", p3:"Polonia", p4:"Argentina", p5:"Argentina", p6:"Empate", gol:0, gd:"Francia"}
+lag = {id:0, name:"Prueba", p1:"Arabia Saudi", p2:"Empate", p3:"Polonia", p4:"Argentina", p5:"Argentina", p6:"Mexico", gol:5, gd:"Australia"}
 
 
 const bb=2211183700
@@ -291,6 +291,7 @@ if (cod > bc & cod < bd) {
                 h1h["pts"]=parseInt(pts0)+1;
             }
         }
+
 
         for (let index = 0; index < Array1.length; index++) {
             c1 = Array1[index];  
