@@ -1,107 +1,263 @@
-
 [
+
+    {
+        "id": -1,
+        "nombre": "Tucuman",
+        "n": "PARTIDO",
+        "ctd": 5,
+        "lla": 261028,"jxc": 218683,
+        "uxp": 306270,"fit": 17674,
+        "hnp": 0,"o1": 18962,
+        "o2": 0
+    },
+    {
+        "id": 0,
+        "nombre": "Tucuman",
+        "n": "TOTAL",
+        "ctd": 5,
+        "lla": 261028,"jxc": 218683,
+        "uxp": 306270,"fit": 17674,
+        "hnp": 0,"o1": 18962,
+        "o2": 0
+    },
     {
         "id": 1,
-        "user": "JuanPedro",
-        "p1": "b1.png",
-        "p2": "b3.png",
-        "p3": "b4.png",
-        "p4": "b1.png",
-        "p5": "b1.png",
-        "p6": "b3.png",
-        "gol": "6",
-        "gd": "FRA"
+        "nombre": "Buenos Aires",
+        "n": "PBA",
+        "ctd": 35,
+        "lla": 2005041,"jxc": 2632107,
+        "uxp": 2880877,"fit": 302263,
+        "hnp": 79906,"o1": 53432,
+        "o2": 42075
     }, 
     {
         "id": 2,
-        "user": "Miguelito",
-        "p1": "b2.png",
-        "p2": "b4.png",
-        "p3": "b4.png",
-        "p4": "b1.png",
-        "p5": "b1.png",
-        "p6": "b2.png",
-        "gol": "8",
-        "gd": "DIN"
+        "nombre": "CABA",
+        "n": "CABA",
+        "ctd": 12,
+        "lla": 314425,"jxc": 833380,
+        "uxp": 412868,"fit": 87328,
+        "hnp": 0,"o1": 22993,
+        "o2": 0
     },
     {
         "id": 3,
-        "user": "Juano",
-        "p1": "b1.png",
-        "p2": "b4.png",
-        "p3": "b4.png",
-        "p4": "b1.png",
-        "p5": "b1.png",
-        "p6": "b4.png",
-        "gol": "6",
-        "gd": "DIN"
+        "nombre": "Catamarca",
+        "n": "CAT",
+        "ctd": 2,
+        "lla": 30388,"jxc": 44879,
+        "uxp": 95255,"fit": 1607,
+        "hnp": 2215,"o1": 0,
+        "o2": 0
     }, 
     {
         "id": 4,
-        "user": "Miguel",
-        "p1": "b2.png",
-        "p2": "b3.png",
-        "p3": "b4.png",
-        "p4": "b1.png",
-        "p5": "b1.png",
-        "p6": "b4.png",
-        "gol": "4",
-        "gd": "DIN"
+        "nombre": "Chaco",
+        "n": "CHA",
+        "ctd": 3,
+        "lla": 165448,"jxc": 164795,
+        "uxp": 219715,"fit": 0,
+        "hnp": 0,"o1": 0,
+        "o2": 0
+    },
+    {
+        "id": 5,
+        "nombre": "Chubut",
+        "n": "CHU",
+        "ctd": 3,
+        "lla": 120478,"jxc": 73492,
+        "uxp": 72615,"fit": 5758,
+        "hnp": 0,"o1": 0,
+        "o2": 0
+    }, 
+    {
+        "id": 6,
+        "nombre": "Cordoba",
+        "n": "CBA",
+        "ctd": 9,
+        "lla": 677595,"jxc": 516179,
+        "uxp": 163508,"fit": 35381,
+        "hnp": 555958,"o1": 9776,
+        "o2": 0
+    },
+    {
+        "id": 7,
+        "nombre": "Corrientes",
+        "n": "CTE",
+        "ctd": 4,
+        "lla": 167456,"jxc": 210239,
+        "uxp": 178467,"fit": 0,
+        "hnp": 0,"o1": 0,
+        "o2": 0
+    }, 
+    {
+        "id": 8,
+        "nombre": "Entre Rios",
+        "n": "ERE",
+        "ctd": 4,
+        "lla": 128269,"jxc": 215205,
+        "uxp": 236999,"fit": 0,
+        "hnp": 0,"o1": 0,
+        "o2": 0
+    },
+    {
+        "id": 9,
+        "nombre": "Formosa",
+        "n": "FOR",
+        "ctd": 3,
+        "lla": 75553,"jxc": 67833,
+        "uxp": 144948,"fit": 0,
+        "hnp": 0,"o1": 0,
+        "o2": 0
+    }, 
+    {
+        "id": 10,
+        "nombre": "Jujuy",
+        "n": "JUJ",
+        "ctd": 3,
+        "lla": 141173,"jxc": 97922,
+        "uxp": 95204,"fit": 39757,
+        "hnp": 0,"o1": 0,
+        "o2": 0
+    },
+    {
+        "id": 11,
+        "nombre": "La Pampa",
+        "n": "LAP",
+        "ctd": 2,
+        "lla": 0,"jxc": 59216,
+        "uxp": 58175,"fit": 3863,
+        "hnp": 0,"o1": 0,
+        "o2": 0
+    }, 
+    {
+        "id": 12,
+        "nombre": "La Rioja",
+        "n": "LAR",
+        "ctd": 3,
+        "lla": 66568,"jxc": 39758,
+        "uxp": 61421,"fit": 0,
+        "hnp": 11154,"o1": 0,
+        "o2": 0
+    },
+    {
+        "id": 13,
+        "nombre": "Mendoza",
+        "n": "MDZ",
+        "ctd": 5,
+        "lla": 468072,"jxc": 295059,
+        "uxp": 180922,"fit": 32796,
+        "hnp": 0,"o1": 16562,
+        "o2": 0
+    }, 
+    {
+        "id": 14,
+        "nombre": "Misiones",
+        "n": "MSN",
+        "ctd": 4,
+        "lla": 0,"jxc": 120111,
+        "uxp": 151752,"fit": 0,
+        "hnp": 0,"o1": 21098,
+        "o2": 0
+    },
+    {
+        "id": 15,
+        "nombre": "Neuquen",
+        "n": "NQN",
+        "ctd": 2,
+        "lla": 132991,"jxc": 83771,
+        "uxp": 67328,"fit": 21035,
+        "hnp": 0,"o1": 36001,
+        "o2": 12419
+    }, 
+    {
+        "id": 16,
+        "nombre": "Rio Negro",
+        "ctd": 3,
+        "n": "RNO",
+        "lla": 134656,"jxc": 76255,
+        "uxp": 90021,"fit": 13932,
+        "hnp": 0,"o1": 36762,
+        "o2": 0
+    },
+    {
+        "id": 17,
+        "nombre": "Salta",
+        "n": "STA",
+        "ctd": 4,
+        "lla": 312289,"jxc": 112725,
+        "uxp": 158807,"fit": 14744,
+        "hnp": 10648,"o1": 16897,
+        "o2": 0
+    },
+    {
+        "id": 18,
+        "nombre": "San Juan",
+        "n": "SAJ",
+        "ctd": 3,
+        "lla": 131374,"jxc": 121828,
+        "uxp": 131149,"fit": 0,
+        "hnp": 0,"o1": 0,
+        "o2": 0
+    }, 
+    {
+        "id": 19,
+        "nombre": "San Luis",
+        "n": "SLS",
+        "ctd": 2,
+        "lla": 124446,"jxc": 68229,
+        "uxp": 49406,"fit": 4401,
+        "hnp": 6476,"o1": 0,
+        "o2": 0
+    },
+    {
+        "id": 20,
+        "nombre": "Santa Cruz",
+        "n": "SCZ",
+        "ctd": 2,
+        "lla": 0,"jxc": 21715,
+        "uxp": 32224,"fit": 3310,
+        "hnp": 0,"o1": 8283,
+        "o2": 0
+    }, 
+    {
+        "id": 21,
+        "nombre": "Santa Fe",
+        "n": "SFE",
+        "ctd": 10,
+        "lla": 640050,"jxc": 568838,
+        "uxp": 381519,"fit": 33390,
+        "hnp": 63471,"o1": 0,
+        "o2": 0
+    },
+    {
+        "id": 22,
+        "nombre": "Sgo. Del Estero",
+        "n": "SDE",
+        "ctd": 4,
+        "lla": 125077,"jxc": 24443,
+        "uxp": 271519,"fit": 0,
+        "hnp": 0,"o1": 24089,
+        "o2": 10631
+    }, 
+    {
+        "id": 23,
+        "nombre": "T. Del Fuego",
+        "n": "TDF",
+        "ctd": 3,
+        "lla": 29886,"jxc": 18002,
+        "uxp": 21440,"fit": 2802,
+        "hnp": 3587,"o1": 8562,
+        "o2": 0
+    },
+    {
+        "id": 24,
+        "nombre": "Tucuman",
+        "n": "TCM",
+        "ctd": 5,
+        "lla": 261028,"jxc": 218683,
+        "uxp": 306270,"fit": 17674,
+        "hnp": 0,"o1": 18962,
+        "o2": 0
     }
 ]
-
-
-var table = new Tabulator("#example-table", {
-    data:tabledata,           //load row data from array
-    layout:"fitColumns",      //fit columns to width of table
-    responsiveLayout:"hide",  //hide columns that dont fit on the table
-    addRowPos:"top",          //when adding a new row, add it to the top of the table
-    history:false,             //allow undo and redo actions on the table
-    pagination:"local",       //paginate the data
-    paginationSize:3,         //allow 7 rows per page of data
-    paginationCounter:"rows", //display count of paginated rows in footer
-    movableColumns:true,      //allow column order to be changed
-    initialSort:[             //set the initial sort order of the data
-        {column:"name", dir:"asc"},
-    ],
-    columnDefaults:{
-        tooltip:true,         //show tool tips on cells
-    },
-    columns:[                 //define the table columns
-        {title:"Name", field:"name", editor:"input"},
-        {title:"Task Progress", field:"progress", hozAlign:"left", formatter:"progress", editor:true},
-        {title:"Gender", field:"gender", width:95, editor:"select", editorParams:{values:["male", "female"]}},
-        {title:"Rating", field:"rating", formatter:"star", hozAlign:"center", width:100, editor:true},
-        {title:"Color", field:"col", width:130, editor:"input"},
-        {title:"Date Of Birth", field:"dob", width:130, sorter:"date", hozAlign:"center"},
-        {title:"Driver", field:"car", width:90,  hozAlign:"center", formatter:"tickCross", sorter:"boolean", editor:true},
-    ],
-});
-
-
-//Build Tabulator
-var table = new Tabulator("#example-table", {
-    height:"311px",
-    layout:"fitColumns",
-    reactiveData:true, //turn on data reactivity
-    data:Array11, //load data into table
-    columns:[
-        {title:"Id", field:"id", sorter:"number"},
-        {title:"Usuario", field:"name", sorter:"string", width:200},
-        {title:"ARG vs ASI", field:"p1", sorter:"string"},
-        {title:"MEX vs POL", field:"p2", sorter:"string"},
-        {title:"ASI vs POL", field:"p3", sorter:"string"},
-        {title:"ARG vs MEX", field:"p4", sorter:"string"},
-        {title:"ARG vs POL", field:"p5", sorter:"string"},
-        {title:"ASI vs MEX", field:"p6", sorter:"string"},
-        {title:"Goles", field:"gol", sorter:"number"},
-        {title:"Ovos", field:"gd", sorter:"string"},
-
-
-    ],
-});
-
-
-console.log("Porota")
-console.log(Array1x)
-console.log("Yegua")
