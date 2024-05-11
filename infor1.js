@@ -1,5 +1,5 @@
 
-let y=0; let dd=[];
+let y=0; let dd=[]; let e=0;
 let person = prompt("Please enter your name");
 let b = parseInt(person);
 for (let i = 0; i < b; i++) {dd[i]= prompt("Please enter your name");}
@@ -51,8 +51,21 @@ let pp2=[
     ["¿Cual de estos alimentos produce Argentina en grandes cantidades?", "Soja", "Tulipanes", "Palta", 1],
  ];
 
+ let pp3=[
+    ["¿Cual de estos animales no hay en Argentina", "Leones", "Pinguinos", "Carpinchos", 1],
+    ["Cual de estos es un Parque Nacional argentino?", "Los Glaciares", "Niagara", "San Pablo", 1],
+    ["¿Cual de estos elementos abunda en Argentina?", "Diamantes", "Litio", "Tulipan", 2],
+    ["Cuantos premios Nobel tiene Argentina?", "2", "5", "7", 2],
+    ["¿Cual de estos alimentos produce Argentina en grandes cantidades?", "Soja", "Tulipanes", "Palta", 1]];
+
+    let pp4=[
+        ["¿Cual de estos animales no hay en Argentina", "Leones", "Pinguinos", "Carpinchos", 1],
+        ["Cual de estos es un Parque Nacional argentino?", "Los Glaciares", "Niagara", "San Pablo", 1],
+        ["¿Cual de estos elementos abunda en Argentina?", "Diamantes", "Litio", "Tulipan", 2],
+        ["Cuantos premios Nobel tiene Argentina?", "2", "5", "7", 2],
+        ["¿Cual de estos alimentos produce Argentina en grandes cantidades?", "Soja", "Tulipanes", "Palta", 1]];
 let boton1 = document.querySelector('#boton1')
-boton1.addEventListener('click', () => { 
+boton1.addEventListener('click', () => { e=1;
     let zz = document.getElementById("zz"); 
     let zzx = document.getElementById("zzx"); 
 
@@ -60,12 +73,12 @@ boton1.addEventListener('click', () => {
       if (y>=b & y<2*b) {d=y-b}; if (y>=2*b & y<3*b) {d=y-2*b}; if (y>=3*b & y<4*b) {d=y-3*b};
        if (y>=4*b & y<5*b) {d=y-4*b}; if (y>=5*b & y<6*b) {d=y-5*b};  if (y>=6*b & y<7*b) {d=y-6*b};
       if (y>=7*b & y<8*b) {d=y-7*b}; console.log("pregunta= " + y + "jugador " + d);y = y + 1;console.log(dd0);
-      zz.innerHTML= `<div align="center"><p style="font-size: 20px;"> <b>`+dd[d]+`</b> <br>` + pp1[y][0] + `</p></div>`;console.log(d);
+      zz.innerHTML= `<div align="center"><p style="font-size: 20px;"> <b>`+dd[d]+`:_ </b> ` + pp1[y][0] + `</p></div>`;console.log(d);
       zzx.innerHTML= `<div align="center"> <p style="font-size: 22px;"><br>A)<b>` + pp1[y][1] +  `</b> // B)<b>` + pp1[y][2] + `</b> // C)<b>` + pp1[y][3] + `</b></p></div>`;
 });
 
 let boton2 = document.querySelector('#boton2')
-boton2.addEventListener('click', () => { 
+boton2.addEventListener('click', () => { e=2;
     let zz = document.getElementById("zz"); 
     let zzx = document.getElementById("zzx"); 
 
@@ -73,14 +86,14 @@ boton2.addEventListener('click', () => {
     if (y>=b & y<2*b) {d=y-b}; if (y>=2*b & y<3*b) {d=y-2*b}; if (y>=3*b & y<4*b) {d=y-3*b};
     if (y>=4*b & y<5*b) {d=y-4*b}; if (y>=5*b & y<6*b) {d=y-5*b};  if (y>=6*b & y<7*b) {d=y-6*b};
    if (y>=7*b & y<8*b) {d=y-7*b}; console.log("pregunta= " + y + "jugador " + d);y = y + 1;console.log(dd0);
-   zz.innerHTML= `<div align="center"> <p style="font-size: 20px;"> <b>`+dd[d]+`</b> <br>` + pp2[y][0] + `</p></div>`;console.log(d);
+   zz.innerHTML= `<div align="center"> <p style="font-size: 20px;"> <b>`+dd[d]+`:_ </b> ` + pp2[y][0] + `</p></div>`;console.log(d);
    zzx.innerHTML= `<div align="center"> <p style="font-size: 22px;"><br>A)<b>` + pp2[y][1] +  `</b> // B)<b>` + pp2[y][2] + `</b> // C)<b>` + pp2[y][3] + `</b></p></div>`;
 });
 
 
 let ba = document.querySelector('#ba')
 ba.addEventListener('click', () => { 
-    if (y>0){x0=pp1[y-1][4];
+    if (y>0){if (e==1){x0=pp1[y-1][4];};if (e==2){x0=pp2[y-1][4];};if (e==3){x0=pp3[y-1][4];};if (e==4){x0=pp4[y-1][4];};
         if(x0!=1){
     let zzq = document.getElementById("zzq"); 
     zzq.innerHTML= y + ` Incorrecto `;
@@ -95,8 +108,7 @@ ba.addEventListener('click', () => {
             text: '',
             icon: 'success',
             confirmButtonText: 'OK' 
-        }); dd0[d] = dd0[d] + 100;
-    }   
+        }); dd0[d] = dd0[d] + 100;}   
 }});
 
 let bb = document.querySelector('#bb')
