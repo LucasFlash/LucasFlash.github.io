@@ -164,7 +164,7 @@ boton5.addEventListener('click', () => {
         Swal.fire({
             title: "BONUS",
             imageUrl: "b1.png",
-            imageWidth: 2500,
+            imageWidth: 250,
             imageHeight: 100,
             imageAlt: "Custom image",
             confirmButtonText: 'OK' 
@@ -186,7 +186,7 @@ boton7.addEventListener('click', () => {
         Swal.fire({
             title: "BANCARROTA",
             imageUrl: "b2.png",
-            imageWidth: 2500,
+            imageWidth: 250,
             imageHeight: 100,
             imageAlt: "Custom image",
             confirmButtonText: 'OK' 
