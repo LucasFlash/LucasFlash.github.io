@@ -56,11 +56,14 @@ let pp2=[
     ["¿Cual de estos clubes no es de Rosario?", "Central Cordoba", "Defensores del Norte", "Tiro Federal", 2],
     ["¿Cual de estos no fue un boxeador argentino?", "Bonavena", "Monzon", "Cargil", 3]];
     let pp4=[
-        ["¿Cual de estos animales no hay en Argentina", "Leones", "Pinguinos", "Carpinchos", 1],
-        ["Cual de estos es un Parque Nacional argentino?", "Los Glaciares", "Niagara", "San Pablo", 1],
-        ["¿Cual de estos elementos abunda en Argentina?", "Diamantes", "Litio", "Tulipan", 2],
-        ["Cuantos premios Nobel tiene Argentina?", "2", "5", "7", 2],
-        ["¿Cual de estos alimentos produce Argentina en grandes cantidades?", "Soja", "Tulipanes", "Palta", 1]];
+        ["¿Cual es la capital de la provincia de Misiones?", "Posadas", "San Rafael", "Misiones", 1],
+        ["¿Cual es la provincia con mayor poblacion?", "San Juan", "Mendoza", "Buenos Aires", 3],
+        ["¿Cual es la capital de la provincia de Santa Cruz?", "Rio Gallegos", "San Rafael", "Usuahia", 1],
+        ["¿Cual es la provincia mas austral?", "Santa Fe", "Tierra del Fuego", "Santa Cruz", 2],
+        ["¿Cual es la capital de la provincia de Chubut?", "Trelew", "Rawson", "Monteflores", 2],
+        ["¿Cual de estas provincias limita con Brasil?", "Buenos Aires", "Mendoza", "Misiones", 3],
+        ["¿Cual es la capital de la provincia de Mendoza?", "Mendoza", "San Rafael", "Misiones", 1],
+        ["¿Cual es la ciudad mas poblada de la provincia de Buenos Aires?", "Olavarria", "La Plata", "Mar del Plata", 3]];
 
 let boton1 = document.querySelector('#boton1')
 boton1.addEventListener('click', () => { e=1;x1=x1+1;
@@ -227,6 +230,6 @@ boton6.addEventListener('click', () => {
         
         console.log(mar);
     Swal.fire(
-        "<p>El ganador es <br> <b>" + mar[0]["name"] + "</b> ; "+ mar[0]["age"] +" pts</p><br>"+
+        "<p>El ganador es <br> <u><b>" + mar[0]["name"] + "</u></b> ; "+ mar[0]["age"] +" pts</p><br>"+
         "<p>El segundo puesto es <br> " + mar[1]["name"] + " ; "+ mar[1]["age"] +" pts</p>")
 });
