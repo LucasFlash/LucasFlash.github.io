@@ -32,27 +32,29 @@ let pp1=[
 
 let pp2=[
     ["¿Cual de estos escritores no es argentino?", "Borges", "Cortazar", "Saramago", 3],
-    ["Cual de estas peliculas gano un Oscar?", "El secreto de sus ojos", "San Martin", "Nueve Reinas", 3],
-    ["¿Cual de estos no es un cantante de rock nacional?", "Spinetta", "Calamaro", "Pintos", 2],
-    ["Cuantos premios Oscars tiene Argentina?", "2", "5", "7", 2],
+    ["Cual de estas peliculas gano un Oscar?", "El secreto de sus ojos", "San Martin", "Nueve Reinas", 1],
+    ["¿Cual de estos no es un cantante de rock nacional?", "Spinetta", "Calamaro", "Pintos", 3],
+    ["Cuantos premios Oscars tiene Argentina?", "2", "5", "7", 1],
     ["¿Cual de estos cuentos escribio Cortazar?", "Rayuela", "Los 7 Locos", "Martin Fierro", 1],
     ["¿Quien escribio el -Martin Fierro-?", "J. Hernandez", "J. L. Borges", "J. Cortazar", 1],
-    ["Cual de estas peliculas no es argentina?", "Nueve Reinas", "Ciudad de Dios", "Tango Feroz", 1],
+    ["Cual de estas peliculas no es argentina?", "Nueve Reinas", "Ciudad de Dios", "Tango Feroz", 2],
     ["¿Cual de estos era un grupo solamente de mujeres?", "Pimpinela", "Mambru", "Bandana", 3],
     ["¿Cual de estos cantantes no nacio en Rosario?", "F. Paez", "J. C. Baglietto", "C. Garcia", 3],
     ["¿Cual de estos no era un grupo de cumbia villera?", "Trapo Sucio", "Damas Gratis", "Meta Guacha", 1],
-    ["Cuantos premios Nobel tiene Argentina?", "2", "5", "7", 2],
+    ["Cuantos premios Nobel tiene Argentina?", "2", "5", "7", 1],
     ["Cual de estos es el teatro mas grande?", "El Circulo", "El Colon", "El San Martin", 2],
     ["Cual es la musica tradicional de Santiago del Estero?", "Zamba", "Chacarera", "Carnavalito", 2],
  ];
 
  let pp3=[
     ["¿En que año gano su primer mundial Argentina?", "1978", "1986", "1990", 1],
-    ["Cual de estos es un Parque Nacional argentino?", "Los Glaciares", "Niagara", "San Pablo", 1],
-    ["¿Cual de estos elementos abunda en Argentina?", "Diamantes", "Litio", "Tulipan", 2],
-    ["Cuantos premios Nobel tiene Argentina?", "2", "5", "7", 2],
-    ["¿Cual de estos alimentos produce Argentina en grandes cantidades?", "Soja", "Tulipanes", "Palta", 1]];
-
+    ["Cual de estos deportes practican -Los Pumas-?", "Volley", "Rugby", "Polo", 2],
+    ["¿Cual de estos fue un tenista argentino?", "Vilas", "Nadal", "Rios", 1],
+    ["Como se llama el equipo femenino de Hockey sobre cesped?", "Las Pumas", "Las Leonas", "Las Tigresas", 2],
+    ["¿Que deporte practica -Paula Pareto-?", "Kendo", "Karate", "Judo", 3],
+    ["¿Cual de estos clubes tiene mas copas libertadores?", "Boca Juniors", "River Plate", "Independiente", 3],
+    ["¿Cual de estos clubes no es de Rosario?", "Central Cordoba", "Defensores del Norte", "Tiro Federal", 2],
+    ["¿Cual de estos no fue un boxeador argentino?", "Bonavena", "Monzon", "Cargil", 3]];
     let pp4=[
         ["¿Cual de estos animales no hay en Argentina", "Leones", "Pinguinos", "Carpinchos", 1],
         ["Cual de estos es un Parque Nacional argentino?", "Los Glaciares", "Niagara", "San Pablo", 1],
