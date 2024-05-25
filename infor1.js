@@ -1,8 +1,8 @@
 
 let y=0; let dd=[]; let e=0;
-let person = prompt("Please enter your name");
+let person = prompt("Ingrese numero de jugadores");
 let b = parseInt(person); let x1=0;let x2=0;let x3=0;let x4=0;
-for (let i = 0; i < b; i++) {dd[i]= prompt("Please enter your name");}
+for (let i = 0; i < b; i++) {dd[i]= prompt("Ingrese Nombre del Jugador");}
  let c = 0; let d=0; dd0= [0, 0, 0, 0, 0];
 m =dd.length; console.log(m); let mar=[];
 
