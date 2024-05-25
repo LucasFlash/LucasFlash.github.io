@@ -50,3 +50,12 @@ font-size: medium;
 }
 
 .mi-clase { width: 135px; height: 150px; }
+
+.imagen-container {
+    width: 40%;
+}
+
+.imagen-10-porciento {
+    width: 10%; /* La imagen ocupará el 100% del contenedor, que es el 10% del ancho de la página */
+    height: auto; /* Mantendrá la proporción de la imagen */
+}
