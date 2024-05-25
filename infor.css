@@ -1,58 +1,58 @@
 .btn1{
     background-color: #ff7f27;
     width: 180px;
-    height: 53px;
+    height: 46px;
 font-size: xx-large;
 }
 .btn2{
     background-color: #ffaec9;
     width: 180px;
-    height: 53px;
+    height: 46px;
 font-size: xx-large;
 }
 .btn3{
     background-color: #398e3d;
     width: 180px;
-    height: 53px;
+    height: 46px;
 font-size: xx-large;
 }
 .btn4{
     background-color: #0288d0;
     width: 180px;
-    height: 53px;
+    height: 46px;
 font-size: xx-large;
 }
 .btn5{
     color: white;
     background-color: black;
     width: 180px;
-    height: 57px;
+    height: 45px;
 font-size: medium;
 }
 .btn6{
     color: white;
     background-color: red;
     width: 180px;
-    height: 57px;
+    height: 45px;
 font-size: medium;
 }
 .btn7{
     color: black;
     background-color: gainsboro;
     width: 180px;
-    height: 57px;
+    height: 45px;
 font-size: medium;
 }
 .bbn{
     background-color: yellow;
     width: 65px;
-    height: 29px;
+    height: 27px;
 }
 
 .mi-clase { width: 135px; height: 150px; }
 
 .imagen-container {
-    width: 40%;
+    width: 60%;
 }
 
 .imagen-10-porciento {
