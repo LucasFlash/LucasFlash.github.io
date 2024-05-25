@@ -43,11 +43,9 @@
   <div class="col-4"> <div class="imagen-container">
 
     <div class="contenedor">
-      <p><u>Rueda Del Infortunio</u></p>
+<button onclick="sortear()"><span id="idestado">Rueda del Infortunio</span></button>
       <div class="concursantes">
-        <canvas id="idcanvas" width="215" height="215"></canvas>
-        <br>
-        <button onclick="sortear()"><span id="idestado">Sortear</span></button>
+        <canvas id="idcanvas" width="185" height="185"></canvas>
         <div class="mark-winner"></div>
       </div>
     </div>
@@ -116,7 +114,7 @@
         }else{
           clearInterval(movement);
           clic=0;
-          document.getElementById("idestado").innerHTML="Sortear";
+          document.getElementById("idestado").innerHTML="Rueda del Infortunio";
         }
       }
   
@@ -134,7 +132,7 @@
 <div align="center">
 ||--<button id="ba" type="button" class="bbn">.-<b>A</b>-.</button>--||
 ||--<button id="bb" type="button" class="bbn">.-<b>B</b>-.</button>--||
-||--<button id="bc" type="button" class="bbn">.-<b>C</b>-.</button>--||<br><br>
+||--<button id="bc" type="button" class="bbn">.-<b>C</b>-.</button>--||<br>
 
 <div class="container"><div class="row">
 <div class="col-3"><div align="center"><button id="boton1" type="button" class="btn1">HISTORIA</button></div></div>
