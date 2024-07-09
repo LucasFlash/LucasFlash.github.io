@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="j1.css">
+    <title>Voto Electrónico</title>
+</head>
+<body> <br><br>
+    <div class="container"><div class="row">
+        <div class="col-4"><div class="marco-rojo">
+        <h1>MANHATTAN</h1>
+        <div class="candidate">
+            <label>
+                <input type="radio" name="candidate" value="A.P. Conservador">
+                A.Partido Conservador
+            </label>
+        </div>
+        <div class="candidate">
+            <label>
+                <input type="radio" name="candidate" value="A.P. Popular">
+                A.Partido Popular
+            </label>
+        </div>
+        <div class="candidate">
+            <label>
+                <input type="radio" name="candidate" value="A.P. Izquierda">
+                A.Partido Izquierda
+            </label>
+        </div>
+        <button id="votar" type="button">Votar</button>
+        <button id="resultado">Mostrar Resultados</button>
+        <div class="result" id="resultados"></div></div>    
+</div></div>
+
+    <script src="j1.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,6 @@
+        .marco-rojo {
+            border: 5px solid red; /* Borde de 5px de grosor y color rojo */
+            padding: 20px; /* Espaciado interno del div */
+            width: 300px; /* Ancho del div */
+            height: 275px; /* Alto del div */
+        }
