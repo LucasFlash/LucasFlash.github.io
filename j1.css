@@ -1,6 +1,53 @@
         .marco-rojo {
             border: 5px solid red; /* Borde de 5px de grosor y color rojo */
             padding: 20px; /* Espaciado interno del div */
-            width: 300px; /* Ancho del div */
-            height: 275px; /* Alto del div */
+            width: 365px; /* Ancho del div */
+            height: 375px; /* Alto del div */
+        }
+
+        .p7{
+            background-color: lightgray;
+            color: black;
+            font-family: system-ui, sans-serif;
+            font-size: 2rem;
+            font-weight: bold;
+            line-height: 1.1;
+            display: grid;
+            grid-template-columns: 1em auto;
+            gap: 0.5em;
+        }
+        .p8{
+            background-color: lightblue;
+            color: black;
+            font-family: system-ui, sans-serif;
+            font-size: 2rem;
+            font-weight: bold;
+            line-height: 1.1;
+            display: grid;
+            grid-template-columns: 1em auto;
+            gap: 0.5em;
+        }
+        .p9{
+            background-color: red;
+            color: black;
+            font-family: system-ui, sans-serif;
+            font-size: 2rem;
+            font-weight: bold;
+            line-height: 1.1;
+            display: grid;
+            grid-template-columns: 1em auto;
+            gap: 0.5em;
+        }
+        .h0{
+            background-color: black;
+            color: white;
+            font-family: system-ui, sans-serif;
+            font-size: 2rem;
+
+        }
+        .a1{
+            font-family: system-ui, sans-serif;
+            font-size: 1.5rem;
+            font-style: italic;
+
         }

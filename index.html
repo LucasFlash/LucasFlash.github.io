@@ -1,6 +1,66 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="j1.css">
+    <title>Voto Electrónico</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+    </style>
 
-<a href="port.html">MANHATTAN</a>
-<a href="port2.html">BROOKLYN</a>
+</head>
+<body><DIV ALIGN="CENTER">VOTO ELECTRONICO</DIV><div>
 
+    <div class="container"><div class="row">
+        <div class="col-3">PARTIDO</div>
+        <div class="col-2"><button id="m1">Q</button> QUEENS</div>
+        <div class="col-2"><button id="m2">B</button> BROOKLYN</div>
+        <div class="col-2"><button id="m3">W</button> WEST</div>
+        <div class="col-3">TOTAL</div>
+    </div></div>
+    <div class="container"><div class="row"><br>
+        <div class="col-3" id="e0"></div>
+         <div class="col-2" id="e1"></div>        <div class="col-2" id="e2"></div>        <div class="col-2" id="e3"></div>
+         <div class="col-3" id="et"></div>
+        </div></div>
+
+        <input type="hidden" id="votar"></input>
+        <input id="resultado" type="hidden"></input>
+        <div class="result" id="resultados"></div></div><br><br><br><br><br><br><br><br>
+    
+        <div align="CENTER">
+    
+        <button id="r1">ACTUALIZAR DISTRITOS</button><BR>
+    
+        <button id="r2">CERRAR VOTACION X</button><BR>
+
+        <button id="r3">RESULTADOS</button><BR>
+          
+        <button id="r41">ESCAÑOS Q</button><button id="r42">ESCAÑOS B</button><button id="r43">ESCAÑOS W</button><BR>
+
+        <button id="r5">BORRAR</button></div>
+
+
+    <script src="j2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </body>
 </html>
+
+
+
+
+
+/////
