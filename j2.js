@@ -131,21 +131,21 @@ e3.innerHTML += k3 + " -- <b>"+ Number((100*k3/t_0[2]).toFixed(2)) + " %</b><br>
 let r41 = document.querySelector('#r41');
 r41.addEventListener('click', () => { 
     let car=[[0,0],[0,0],[0,0]]; for (let j = 0; j < 3; j++) {car[j][0]= pp[j];car[j][1]= par[j];};let dar=car.slice();
-     let rar1 = dhont(5, car); console.log(rar1);  let yt=frecx(pp,rar1); console.log(yt);for (let j = 0; j < 3; j++) {
+     let rar1 = dhont(18, car); console.log(rar1);  let yt=frecx(pp,rar1); console.log(yt);for (let j = 0; j < 3; j++) {
      e1.innerHTML += pp[j] + " --> <b>"+ yt[j][1] +"</b><br>";};
  });
 
  let r42 = document.querySelector('#r42');
  r42.addEventListener('click', () => { 
      let car=[[0,0],[0,0],[0,0]]; for (let j = 0; j < 3; j++) {car[j][0]= pp[j];car[j][1]= par[j+3];};let dar=car.slice();
-      let rar1 = dhont(10, car); console.log(rar1);  let yt=frecx(pp,rar1); console.log(yt);for (let j = 0; j < 3; j++) {
+      let rar1 = dhont(36, car); console.log(rar1);  let yt=frecx(pp,rar1); console.log(yt);for (let j = 0; j < 3; j++) {
       e2.innerHTML += pp[j] + " --> <b>"+ yt[j][1] +"</b><br>";};
   });
 
   let r43 = document.querySelector('#r43');
   r43.addEventListener('click', () => { 
       let car=[[0,0],[0,0],[0,0]]; for (let j = 0; j < 3; j++) {car[j][0]=pp[j];car[j][1]= par[j+6];};let dar=car.slice();
-       let rar1 = dhont(12, car); console.log(rar1);  let yt=frecx(pp,rar1); console.log(yt);for (let j = 0; j < 3; j++) {
+       let rar1 = dhont(66, car); console.log(rar1);  let yt=frecx(pp,rar1); console.log(yt);for (let j = 0; j < 3; j++) {
        e3.innerHTML += pp[j] + " --> <b>"+ yt[j][1] +"</b><br>";};
    });
 
