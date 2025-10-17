@@ -69,12 +69,16 @@
     <button id="r4" class="bx4"></button>
 <script>
     
-    let nombres=["1.1) Brian", "1.2) Nacho", "1.3) Lucas", "1.4) Reymon", "2.1) Brian", "2.2) Nacho", "2.3) Lucas", "2.4) Reymon",
-     "3.1) Brian", "3.2) Nacho", "3.3) Lucas", "3.4) Reymon", "4.1) Brian", "4.2) Nacho", "4.3) Lucas", "4.4) Reymon",
-      "5.1) Brian", "5.2) Nacho", "5.3) Lucas", "5.4) Reymon",];
+    let nombres=["1.1) Brian", "1.2) Nacho", "1.3) Lucas", "1.4) Reymon", "1.5) Maca", 
+    "2.1) Brian", "2.2) Nacho", "2.3) Lucas", "2.4) Reymon","2.5) Maca",
+     "3.1) Brian", "3.2) Nacho", "3.3) Lucas", "3.4) Reymon", "3.5) Maca",
+     "4.1) Brian", "4.2) Nacho", "4.3) Lucas", "4.4) Reymon","4.5) Maca",
+      "5.1) Brian", "5.2) Nacho", "5.3) Lucas", "5.4) Reymon","5.5) Maca",];
 
-    let puntos=[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-let a=0; let b=0; const zx=20;
+    let puntos=[ 0, 0, 0, 0, 0, 
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+     0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+let a=0; let b=0; const zx=25;
 console.log(puntos); console.log(nombres);
     const boton = document.getElementById("o1")
     boton.addEventListener("click", () => { if (b<1) { 
@@ -156,10 +160,10 @@ let a2=puntos[2]+puntos[6]+puntos[10]; let a3=puntos[3]+puntos[7]+puntos[11]; co
         const boton5 = document.getElementById("o2")
     boton5.addEventListener("click", () => { console.log(puntos);if (a==zx) { let sign = prompt("MUCHAS GRACIAS POR SU PARTICIPACION; CLAVE:");
     if(sign==123){
-      let a0=puntos[0]+puntos[4]+puntos[8]; let a1=puntos[1]+puntos[5]+puntos[9];
-let a2=puntos[2]+puntos[6]+puntos[10]; let a3=puntos[3]+puntos[7]+puntos[11];
+      let a0=puntos[0]+puntos[5]+puntos[9]; let a1=puntos[1]+puntos[6]+puntos[10];
+let a2=puntos[2]+puntos[7]+puntos[11]; let a3=puntos[3]+puntos[8]+puntos[12]; let a4=puntos[4]+puntos[9]+puntos[13];
 console.log(a0);
-alert("Brian "+ a0 + "; Nacho "+ a1+ "; Maca "+ a2 + "; Ramon "+ a3)}}
+alert("Brian "+ a0 + "; Nacho "+ a1+ "; Lucas "+ a2 + "; Ramon "+ a3 + "; Maca "+ a4)}}
       else{alert("ERROR");}
     });
 
@@ -168,29 +172,32 @@ mat = [
   ["¿Cuál es la capital de España?", "Madrid", "Berlin", "París", "Caracas", 1],
   ["¿Cuál es la capital de Perú?", "Berlin", "Bogotá", "Lima", "Caracas", 3],
   ["¿Cuál es la capital de Rusia?", "Moscu", "Bogotá", "París", "Caracas", 1],
+    ["¿Cuál es la capital de Egipto?", "Madero", "El Cairo", "Brasilia", "Seul", 2],
 
   ["¿Cual de estos no es un equipo NBA?", "Los Angeles Lakers", "Miami Heats", "Chicago Bulls", "Texas Books", 4],
   ["¿Cuál de estos no es un equipo futbol de Italia?", "Lazio", "Juventus", "Ragazi", "Udinese", 3],
   ["¿Cual equipo gano mas copas Libertadores?", "Boca Jrs", "River Plate", "Independiente", "Racing Club", 3],
   ["¿Cuál de estos no fue n° 1 en el tenis?", "Del Potro", "Federer", "Nadal", "Agassi", 1],
+  ["¿Cuál de estos no fue campeon mundial futbol?", "Holanda", "España", "Inglaterra", "Uruguay", 1],
 
   ["¿De que pais es capital Santiago?", "Chile", "España", "Inglaterra", "Francia", 1],
   ["¿De que pais es capital Londres?", "Inglaterra", "Bogotá", "Brasil", "Caracas", 1],
   ["¿De que pais es capital Roma?", "Rusia", "Italia", "Argentina", "Peru", 2],
   ["¿De que pais es capital Berlin?", "Austria", "Italia", "China", "Alemania", 4],
+  ["¿De que pais es capital Lisboa?", "Australia", "Portugal", "Chile", "Albania", 2],
 
   ["¿Planeta más grande del sist. solar?", "Marte", "Júpiter", "Saturno", "Neptuno", 2],
   ["¿Planeta más chico del sist. solar?", "Mercurio", "Marte", "Neptuno", "Tierra", 1],
   ["¿Planeta más cercano al sol?", "Mercurio", "Tierra", "Saturno", "Venus", 1],
   ["¿Planeta mas alejado del sol?", "Saturno", "Marte", "Neptuno", "Tierra", 3],
+   ["¿Que Planeta tiene anillos?", "Saturno", "Tierra", "Neptuno", "Urano", 1],
 
   ["¿Quién pintó la Mona Lisa?", "Donatello", "Da Vinci", "Miguel Ángel", "Picasso", 2],
   ["¿Quien pinto el Guernica?", "Picasso", "Júpiter", "Fader", "Miguel Angel", 1],
   ["¿Quien pinto Las Meninas?", "Munch", "Velasquez", "Bernini", "Romanov", 2],
-  ["¿Quien pinto EL Grito?", "Juarez", "Da Vinci", "Lendry", "Munch", 4], ];
+  ["¿Quien pinto EL Grito?", "Juarez", "Da Vinci", "Lendry", "Munch", 4], 
+  ["¿Quien pinto La ultima cena?", "Janton", "Dan Voight", "Da Vinci", "Munch", 3] ];
 </script><script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>
 </html>
-
-
