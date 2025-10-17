@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados de Juegos - Presentación Dinámica (V2)</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+            transition: background-color 2s;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            opacity: 0; /* Oculta la tabla inicialmente para mostrarla vacía */
+            transition: opacity 1s;
+        }
+        table.visible {
+            opacity: 1; /* Muestra la tabla cuando el JS está listo */
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+            font-size: 1.1em;
+            /* Estilo inicial para que las celdas estén visualmente vacías */
+            color: transparent; 
+            transition: color 0.5s, background-color 1s; 
+        }
+        th {
+            background-color: #007bff;
+            color: white; /* Las cabeceras de los premios deben ser visibles */
+            text-transform: uppercase;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .juego {
+            text-align: left;
+            font-weight: bold;
+            background-color: #e9ecef;
+        }
+        /* Clase para hacer visible el contenido de la celda */
+        .contenido-visible {
+            color: #495057; /* Color normal para el texto del juego y los nombres */
+        }
+        /* Estilos para las celdas actualizadas (opcional, para visualización) */
+        .actualizado {
+            background-color: #d4edda;
+            color: #155724;
+            font-weight: bold;
+            transition: background-color 1s;
+        }
+        #mensaje-final {
+            margin-top: 40px;
+            font-size: 2em;
+            color: #28a745;
+            font-weight: bold;
+            opacity: 0;
+            transition: opacity 2s, transform 1s;
+            transform: scale(0.9);
+        }
+        #mensaje-final.visible {
+            opacity: 1;
+            transform: scale(1);
+        }
+    </style>
+</head>
+<body>
+<h4>LOS JUEGOS DE LUCAS FLASH</h4>
+    <h1>🏆 Resultados de los Juegos 🏅</h1>
+
+    <table id="tabla-resultados">
+        <thead>
+            <tr>
+                <th>JUEGO</th>
+                <th>ORO 🥇</th>
+                <th>PLATA 🥈</th>
+                <th>BRONCE 🥉</th>
+            </tr>
+        </thead>
+        <tbody>
+                        <tr id="fila-caballo">
+                <td class="juego" id="nombre-caballo">CABALLO</td>
+                <td id="caballo-oro"></td>
+                <td id="caballo-plata"></td>
+                <td id="caballo-bronce"></td>
+            </tr>
+            <tr id="fila-trivia">
+                <td class="juego" id="nombre-trivia">TRIVIA</td>
+                <td id="trivia-oro"></td>
+                <td id="trivia-plata"></td>
+                <td id="trivia-bronce"></td>
+            </tr>
+            <tr id="fila-disco">
+                <td class="juego" id="nombre-disco">DISCO</td>
+                <td id="disco-oro"></td>
+                <td id="disco-plata"></td>
+                <td id="disco-bronce"></td>
+            </tr>
+
+            <tr id="fila-bala">
+                <td class="juego" id="nombre-bala">BALA</td>
+                <td id="bala-oro"></td>
+                <td id="bala-plata"></td>
+                <td id="bala-bronce"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div id="mensaje-final">¡Felicitaciones a Todos los Participantes! 🎉</div>
+
+    <script>
+        // Los resultados organizados por juego y premio (Oro, Plata, Bronce)
+        const resultados = [
+             { juego: 'caballo', nombres: ['Lara', 'Pedro', 'Rimi'] },
+            { juego: 'trivia', nombres: ['Juli', 'Pedro', 'Delfi'] },
+            { juego: 'disco', nombres: ['Pedro', 'Lara', 'Tom'] },
+            { juego: 'bala', nombres: ['Tom', 'Rimi', 'Lara'] }
+        ];
+
+        const premios = ['oro', 'plata', 'bronce'];
+        const duracionJuego = 10000; // 10 segundos en milisegundos
+
+        /**
+         * Función para actualizar las celdas de un juego (nombre y resultados).
+         * @param {number} indiceJuego - El índice del juego a actualizar en el array 'resultados'.
+         */
+        function actualizarJuego(indiceJuego) {
+            if (indiceJuego < resultados.length) {
+                const juegoActual = resultados[indiceJuego];
+                const nombreJuego = juegoActual.juego;
+
+                // 1. Muestra el nombre del juego (TRIVIA, DISCO, etc.)
+                const celdaNombreJuego = document.getElementById(`nombre-${nombreJuego}`);
+                if (celdaNombreJuego) {
+                    celdaNombreJuego.classList.add('contenido-visible');
+                }
+
+                // 2. Muestra los nombres de los ganadores para ese juego
+                juegoActual.nombres.forEach((nombre, index) => {
+                    const premio = premios[index];
+                    const cellId = `${nombreJuego}-${premio}`;
+                    const celdaResultado = document.getElementById(cellId);
+
+                    if (celdaResultado) {
+                        celdaResultado.textContent = nombre;
+                        // Hace visible el nombre del ganador
+                        celdaResultado.classList.add('contenido-visible');
+                        // Resalta brevemente la celda
+                        celdaResultado.classList.add('actualizado');
+                        setTimeout(() => {
+                            celdaResultado.classList.remove('actualizado');
+                        }, 5000);
+                    }
+                });
+
+                // 3. Programa la actualización del siguiente juego
+                setTimeout(() => {
+                    actualizarJuego(indiceJuego + 1);
+                }, duracionJuego);
+
+            } else {
+                // Todos los juegos se han actualizado, muestra el mensaje final
+                mostrarMensajeFinal();
+            }
+        }
+
+        /**
+         * Muestra el mensaje de felicitación final.
+         */
+        function mostrarMensajeFinal() {
+            const mensajeFinal = document.getElementById('mensaje-final');
+            document.body.style.backgroundColor = '#d1ecf1';
+            mensajeFinal.classList.add('visible');
+        }
+
+        // Inicia la presentación al cargar la página
+        document.addEventListener('DOMContentLoaded', () => {
+            // Hace visible la tabla con sus encabezados (pero celdas vacías/transparentes)
+            document.getElementById('tabla-resultados').classList.add('visible');
+            
+            // Inicia la secuencia de actualización
+            actualizarJuego(0); // Comienza con el primer juego (índice 0)
+        });
+    </script>
+
+</body>
+</html>
